@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive Layout, Form Validation & To-Do List</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation Bar (Flexbox) -->
+<header class="navbar">
+    <h1>My Demo Page</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<!-- Main Layout (Grid) -->
+<main class="grid-layout">
+    <section class="content">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <label>Name:</label>
+            <input type="text" id="name" required />
+            
+            <label>Email:</label>
+            <input type="email" id="email" required />
+            
+            <button type="submit">Send</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </section>
+
+    <aside class="sidebar">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Add a task">
+        <button id="addBtn">Add</button>
+        <ul id="taskList"></ul>
+    </aside>
+</main>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.error {
+    color: red;
+}
+
+/* Navbar (Flexbox) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+.navbar nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout (CSS Grid) */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+    gap: 2rem;
+}
+.content, .sidebar {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* To-Do List Styles */
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+#taskList li {
+    padding: 5px;
+    background: #eee;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#taskList li button {
+    background: crimson;
+    color: #fff;
+    border: none;
+    padding: 3px 8px;
+    cursor: pointer;
+}
